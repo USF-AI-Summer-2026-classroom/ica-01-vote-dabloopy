@@ -3,8 +3,6 @@ class Candidate:
     def __init__(self, name, leaning):
         self.name = name
         self.leaning = leaning
-        #adding eleiminated status to candidate
-        self.eliminated = False
 
     def get_leaning(self):
         return self.leaning
@@ -23,10 +21,3 @@ class Candidate:
 
     def eliminate(self):
         self.eliminated = True
-
-    def __repr__(self):
-        return {
-            "name": self.name,
-            "leaning": self.leaning,
-            "eliminated": self.eliminated
-        }
